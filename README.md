@@ -1,6 +1,6 @@
 # Introduction
 
-This is a kubernetes cluster with an ASP.NET WebAPI service and a background service hosted. You must complete the requirements for the implementation of the service as described below.
+This is a kubernetes cluster with a webapi service and a background service. You must complete the requirements for the implementation of the service as described below.
 
 In order to succeed with this assignment, make sure to follow the [80/20 rule](https://en.wikipedia.org/wiki/Pareto_principle). Regardless of if you're familiar with every technology listed below, you only need to learn or know enough about each tool to get this assignment working. We are not looking for perfect usage of any tool.
 
@@ -44,7 +44,9 @@ Please write a background service which fulfills the following requirements:
 
 You do not need to use real or live trading data. Feel free to use or create any data that would fulfil the requirements of the assignment, even if the source data itself is nonsensical. Also, feel free to assume that users have infinite buying power, for the sake of simplicity.
 
-Please write unit tests for each important and testable unit of your code. We have provided an xUnit project, `Bluebird.Tests`, where you can write your tests. If you are not familiar with writing tests for xUnit, see [the xUnit documentation](https://xunit.net/#documentation).
+Please write unit tests for each important and testable unit of your code. We have provided an xUnit project, `src/Bluebird.Tests`, where you can write your tests. If you are not familiar with writing tests for xUnit, see [the xUnit documentation](https://xunit.net/#documentation).
+
+Within `src/Bluebird.Tests`, we've provided a class `SqliteConnectionProvider` which can provide an ephemeral sqlite db instance for use within unit tests. You can use it to a get a direct `DbConnection`, or to get a `DbContextOptions<T>` necessary for instantiating a `DbContext` instance.
 
 ## Evaluation Criteria
 
@@ -52,5 +54,3 @@ Please write unit tests for each important and testable unit of your code. We ha
 - Speed / resourcefulness
 - Working with a broad specification / autonomous decision making
 - Quality given the amount of time taken
-
-
