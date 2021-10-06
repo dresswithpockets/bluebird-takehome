@@ -30,17 +30,12 @@ We're not looking for a formal essay or anything - maybe 500 words or less. Ther
 
 Please write an API which fulfills the following user requirements
 
-- User can get a list of trade securities
-- User can get information about each security, such as the current share price
-- User can get a list of all of their own market orders
+- User can get a list of their market order history & the status of each market order
 - User can create a market order to sell or buy a number of shares of a security
-- User can cancel an existing market order if it hasnt already executed
-- User can get a list of all shares of each security they own, as well as the price they bought each share at.
 
 Please write a background service which fulfills the following requirements:
 
 - Market orders should execute ASAP @ the current share price of the specified security
-- Market orders should automatically cancel if there is more than 10% variance between the current share price of the security & the share price of the security when the market order was created
 
 You do not need to use real or live trading data. Feel free to use or create any data that would fulfil the requirements of the assignment, even if the source data itself is nonsensical. Also, feel free to assume that users have infinite buying power, for the sake of simplicity.
 
