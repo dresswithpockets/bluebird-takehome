@@ -24,6 +24,8 @@ We're not looking for a formal essay or anything - maybe 500 words or less. Ther
 
 # Assignment
 
+We provide a postgresql instance via the docker-compose spec. You are expected to use this for your SQL needs. You may connect to it however you desire; such as through EF Core or Dapper.
+
 **Please write an API in `src/Bluebird.Api` which fulfills the following user requirements:**
 
 - User can get a list of their market order history & the status of each market order
