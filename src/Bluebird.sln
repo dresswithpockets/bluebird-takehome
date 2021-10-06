@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bluebird.Tests", "Bluebird.Tests\Bluebird.Tests.csproj", "{846FCBE4-5E94-41A2-A2E6-2408136ECC8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bluebird.Api", "Bluebird.Api\Bluebird.Api.csproj", "{9F9FAB93-392A-4DCA-BA80-FD2EBC69EA94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bluebird.Background", "Bluebird.Background\Bluebird.Background.csproj", "{202F4609-D9D4-4C38-B228-076815DE4BE3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{846FCBE4-5E94-41A2-A2E6-2408136ECC8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{846FCBE4-5E94-41A2-A2E6-2408136ECC8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{846FCBE4-5E94-41A2-A2E6-2408136ECC8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{846FCBE4-5E94-41A2-A2E6-2408136ECC8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F9FAB93-392A-4DCA-BA80-FD2EBC69EA94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F9FAB93-392A-4DCA-BA80-FD2EBC69EA94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F9FAB93-392A-4DCA-BA80-FD2EBC69EA94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F9FAB93-392A-4DCA-BA80-FD2EBC69EA94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{202F4609-D9D4-4C38-B228-076815DE4BE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{202F4609-D9D4-4C38-B228-076815DE4BE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{202F4609-D9D4-4C38-B228-076815DE4BE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{202F4609-D9D4-4C38-B228-076815DE4BE3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

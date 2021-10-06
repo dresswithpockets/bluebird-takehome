@@ -1,0 +1,51 @@
+version: '3.9'
+
+services:
+  db:
+    image: postgres:13.3
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
+    networks:
+      - bluebird
+    ports:
+      - 5429:5432
+    restart: always
+    volumes:
+      - ./localdb/data:/var/lib/postgresql
+  
+  api:
+    build:
+      context: ./src
+      dockerfile: api.Dockerfile
+    user: bluebird
+    depends_on:
+      - db
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    networks:
+      - bluebird
+    ports:
+      - 5000:5000
+    volumes:
+      - ./src:/opt/src
+    restart: always
+  
+  bg:
+    build:
+      context: ./src
+      dockerfile: bg.Dockerfile
+    user: bluebird
+    depends_on:
+      - db
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    volumes:
+      - ./src:/opt/src
+    networks:
+      - bluebird
+    restart: always
+
+networks:
+  bluebird:
