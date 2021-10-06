@@ -1,6 +1,6 @@
 # Introduction
 
-This is a kubernetes cluster with a webapi service and a background service. You must complete the requirements for the implementation of the service as described below.
+This is a monorepo a webapi service and a background service. You must complete the requirements for the implementation of the service as described below.
 
 In order to succeed with this assignment, make sure to follow the [80/20 rule](https://en.wikipedia.org/wiki/Pareto_principle). Regardless of if you're familiar with every technology listed below, you only need to learn or know enough about each tool to get this assignment working. We are not looking for perfect usage of any tool.
 
